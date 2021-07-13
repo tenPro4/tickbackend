@@ -7,7 +7,6 @@ const {
 } = require('../model/user/User.model');
 
 router.post("/", async (req, res) => {
-    console.log(req.body);
     const { name, company, address, phone, email, password } = req.body;
     try{
         const newUserObj = {
